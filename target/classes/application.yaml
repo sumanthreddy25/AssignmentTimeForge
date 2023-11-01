@@ -18,12 +18,11 @@ spring:
       show-sql: true
 
   #JPA Settings
-  jpa.hibernate.ddl_auto: update
+  jpa.hibernate.ddl_auto: create
   
   logging:
     config: classpath:log4j2.xml
-openWeatherApp:
-  baseUrl: https://api.openweathermap.org/data/2.5
-  defaultLocation: ",us"
-  appId: 7fa18767eaab164c34d8b800a6a12872
+tomorrowDocsApi:
+  baseUrl: https://api.tomorrow.io/v4/weather/forecast?location=
+  appId: 5PMczKAScEfw5HuNX8boYvRbuAgFdO3H
 

@@ -18,36 +18,37 @@ public class WeatherData {
     private int id;
     private double highTemperature;
     private double lowTemperature;
-    private int humidity;
-    private String description;
-    private String zipCode;
+    private double humidity;
+
     private Date date;
-    private double preception;
-    private String service;
+    private double Precipitation;
+    private double windSpeed;
+
+    private String zipCode;
 
 
     public WeatherData() {
 
     }
 
-    public WeatherData(double highTemperature, double lowTemperature, int humidity, String description,
-                       String zipCode, Date date, double preception) {
+    public WeatherData(double highTemperature, double lowTemperature, double humidity, Date date, double Precipitation, double windSpeed, String zipCode) {
         super();
+        this.id = id;
         this.highTemperature = highTemperature;
         this.lowTemperature = lowTemperature;
         this.humidity = humidity;
-        this.description = description;
-        this.zipCode = zipCode;
         this.date = date;
-        this.preception = preception;
+        this.Precipitation = Precipitation;
+        this.windSpeed = windSpeed;
+        this.zipCode = zipCode;
     }
 
-    public double getPreception() {
-        return preception;
+    public int getId() {
+        return id;
     }
 
-    public void setPreception(double preception) {
-        this.preception = preception;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public double getHighTemperature() {
@@ -66,20 +67,12 @@ public class WeatherData {
         this.lowTemperature = lowTemperature;
     }
 
-    public int getHumidity() {
+    public double getHumidity() {
         return humidity;
     }
 
-    public void setHumidity(int humidity) {
+    public void setHumidity(double humidity) {
         this.humidity = humidity;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
     }
 
     public String getZipCode() {
@@ -97,6 +90,23 @@ public class WeatherData {
     public void setDate(Date date) {
         this.date = date;
     }
+
+    public double getPrecipitation() {
+        return Precipitation;
+    }
+
+    public void setPrecipitation(double preception) {
+        this.Precipitation = preception;
+    }
+
+    public double getWindSpeed() {
+        return windSpeed;
+    }
+
+    public void setWindSpeed(double windSpeed) {
+        this.windSpeed = windSpeed;
+    }
+
 
 
 }
